@@ -1,8 +1,6 @@
 <?php
 namespace MockeryDemo\Service;
 
-use MockeryDemo\Helper\DateHelper;
-
 /**
  * Class DemoService
  * @package MockeryDemo\Service
@@ -15,19 +13,23 @@ class DemoService
      */
     public function sayHelloGenerator($name)
     {
-        return $this->generateMessage($name);
+        return $this->generateMessage(
+            $name,
+            \MockeryDemo\Helper\DateHelper::fullDate()
+        );
     }
 
     /**
-     * @param $name
+     * @param string $name
+     * @param string $date
      * @return string
      */
-    private function generateMessage($name)
+    protected function generateMessage($name, $date)
     {
         return sprintf(
             'Hello, %s! Current time is %s',
             $name,
-            DateHelper::fullDate()
+            $date
         );
     }
 }

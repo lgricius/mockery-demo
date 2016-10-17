@@ -12,7 +12,7 @@ class DateHelper
      */
     public static function fullDate()
     {
-        echo 1;
+        print('asas');
         return date('c');
     }
 }
