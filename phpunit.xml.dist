@@ -1,0 +1,11 @@
+<phpunit
+        bootstrap="./vendor/autoload.php"
+        colors="true"
+        backupGlobals="false"
+>
+    <testsuites>
+        <testsuite name="MockeryDemo Test Suite">
+            <directory>./tests/MockeryDemoTest</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

@@ -1,0 +1,16 @@
+{
+    "name": "lgricius/mockery-demo",
+    "require":{
+        "php": "~5.6"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "^5.6"
+    },
+    "autoload": {
+        "psr-0": {
+            "MockeryDemo": "src/",
+            "DemoServiceTest": "tests/"
+        }
+    }
+}
